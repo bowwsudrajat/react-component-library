@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/react-component-library"
   },
-  "version": "0.1.1",
+  "version": "0.1.02",
   "description": "A simple template for a custom React component library",
   "scripts": {
     "rollup": "rollup -c",
@@ -11,7 +11,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "YOUR_NAME",
+  "author": "Khalid Sudrajat",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
