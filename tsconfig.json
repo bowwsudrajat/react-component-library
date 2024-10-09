@@ -16,6 +16,35 @@
     "outDir": "dist",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
-  }
+    "emitDeclarationOnly": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "noErrorTruncation": false,
+    "allowJs": true,
+    "paths": {
+      "@momo/material": ["./packages/material/src"],
+      "@momo/material/*": ["./packages/material/src/*"],
+      "@momo/styled-engine": ["./packages/styled-engine/src"],
+      "@momo/styled-engine/*": ["./packages/styled-engine/src/*"],
+      "@momo/styled-engine-sc": ["./packages/styled-engine-sc/src"],
+      "@momo/styled-engine-sc/*": ["./packages/styled-engine-sc/src/*"],
+      "@momo/styles": ["./packages/styles/src"],
+      "@momo/styles/*": ["./packages/styles/src/*"],
+      "@momo/system": ["./packages/system/src"],
+      "@momo/system/*": ["./packages/system/src/*"],
+      "@momo/types": ["./packages/types"],
+      "@mui/base": ["./packages/mui-base/src"],
+      "@mui/base/*": ["./packages/mui-base/src/*"],
+      "@momo/private-theming": ["./packages/private-theming/src"],
+      "@momo/private-theming/*": ["./packages/private-theming/src/*"],
+      "@momo/utils": ["./packages/utils/src"],
+      "@momo/utils/*": ["./packages/utils/src/*"],
+      "@momo/material-nextjs": ["./packages/material-nextjs/src"],
+      "@momo/material-nextjs/*": ["./packages/material-nextjs/src/*"],
+      "@momo/icons-material/*": ["./packages/icons-material/src/icon.d.ts"]
+    },
+    // Otherwise we get react-native typings which conflict with dom.lib.
+    "types": ["node", "react"]
+  },
 }
