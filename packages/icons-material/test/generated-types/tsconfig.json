@@ -1,0 +1,34 @@
+{
+  "extends": "../../../../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "jsx": "react",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": "../../../",
+    "noErrorTruncation": true,
+    "paths": {
+      "@momo/icons-material": ["./icons-material/build"],
+      "@momo/icons-material/*": ["./icons-material/build/*"],
+      "@momo/material": ["./material/src"],
+      "@momo/material/*": ["./material/src/*"],
+      "@momo/private-theming": ["./private-theming/src"],
+      "@momo/private-theming/*": ["./private-theming/src/*"],
+      "@momo/styled-engine-sc": ["./styled-engine-sc/src"],
+      "@momo/styled-engine-sc/*": ["./styled-engine-sc/src/*"],
+      "@momo/styled-engine": ["./styled-engine/src"],
+      "@momo/styled-engine/*": ["./styled-engine/src/*"],
+      "@momo/styles": ["./styles/src"],
+      "@momo/styles/*": ["./styles/src/*"],
+      "@momo/system": ["./system/src"],
+      "@momo/system/*": ["./system/src/*"],
+      "@momo/types": ["./types"],
+      "@momo/utils": ["./utils/src"],
+      "@momo/utils/*": ["./utils/src/*"],
+    }
+  },
+  "exclude": ["**/node_modules/"]
+}
